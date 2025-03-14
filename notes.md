@@ -64,3 +64,16 @@ import bs4
 import pytest
 import sqlalchemy
 ```
+
+## Using `if __name__ == "__main__":`
+
+The `if __name__ == "__main__":` construct in Python is used to determine if a script is being run as the main program or if it is being imported as a module into another script. This allows you to control the execution of code blocks based on how the script is being used.
+
+### Example
+
+```python
+def main():
+    print("This is the main function.")
+
+if __name__ == "__main__":
+    main()
