@@ -1,4 +1,4 @@
-from mainFunc import Account
+from mainFunc.accountFunc import Account
 from decimal import Decimal
 
 def mainInterface():
@@ -16,7 +16,6 @@ def mainInterface():
             amount = Decimal(input("Enter the amount to deposit: "))
             account.deposit(amount)
             print("Amount deposited successfully!")
-            return [account.transactionLog, account.transactionLogTime]
         elif choice == "2":
             amount = Decimal(input("Enter the amount to withdraw: "))
             if account.get_balance() < amount:
@@ -24,7 +23,6 @@ def mainInterface():
             else:
                 account.withdraw(amount)
                 print("Amount withdrawn successfully!")
-                return [account.transactionLog, account.transactionLogTime]
         elif choice == "3":
             print("Your account balance is: ", account.get_balance())
         elif choice == "4":
@@ -35,3 +33,6 @@ def mainInterface():
             break
         else:
             print("Invalid choice! Please enter a valid choice.")
+            
+if __name__ == "__main__":
+    mainInterface()
