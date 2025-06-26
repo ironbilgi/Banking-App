@@ -30,8 +30,8 @@ def mainInterface():
         elif choice == "4":
             print("Thank you for using our service!")
             break
-        elif choice == "5":   
-            print("Invalid choice! Please enter a valid choice.")   
+        elif choice == "5":
+            print("Invalid choice! Please enter a valid choice.")
             break
         else:
             print("Invalid choice! Please enter a valid choice.")
